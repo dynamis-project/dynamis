@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "@biomejs/config"
+  ],
+  "files": {
+    "ignore": [
+      "node_modules",
+      "dist",
+      "coverage",
+      "poc"
+    ]
+  },
+  "linter": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true
+  }
+}
