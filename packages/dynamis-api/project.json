@@ -1,0 +1,25 @@
+{
+  "name": "dynamis-api",
+  "sourceRoot": "packages/dynamis-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm --filter @dynamis/api build"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm --filter @dynamis/api dev"
+      }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm --filter @dynamis/api start"
+      }
+    }
+  }
+}

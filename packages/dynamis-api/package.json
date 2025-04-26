@@ -1,0 +1,19 @@
+{
+  "name": "@dynamis/api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "dev": "tsup src/server.ts --watch --onSuccess \"node dist/server.js\"",
+    "build": "tsup src/server.ts",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.24.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3"
+  }
+}
