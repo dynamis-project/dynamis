@@ -1,12 +1,13 @@
 import Fastify from 'fastify';
 import { healthRoutes } from './routes/health';
+import { screensRoutes } from './routes/screens';
 
 const app = Fastify({
   logger: true
 });
 
-// Register routes
 app.register(healthRoutes, { prefix: '/health' });
+app.register(screensRoutes, { prefix: '/screens' });
 
 // Start the server
 const start = async () => {
